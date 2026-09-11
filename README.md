@@ -132,8 +132,11 @@ Add your dashboard screenshots here:
 
 Example:
 
-![Dashboard Screenshot](./screenshots/dashboard.png)
+<img width="1763" height="815" alt="Screenshot_11-9-2026_11926_localhost" src="https://github.com/user-attachments/assets/aee0d366-baba-4a68-8d43-cb2480dc7b48" />
 
+<img width="1763" height="815" alt="Screenshot_11-9-2026_11939_localhost" src="https://github.com/user-attachments/assets/6fefcf3f-bee4-40e4-a236-3a7dee027822" />
+<img width="1763" height="1587" alt="Screenshot_11-9-2026_11958_localhost" src="https://github.com/user-attachments/assets/91aa16ca-d144-4d61-bb9c-f1575ec1acc4" />
+<img width="1763" height="1886" alt="Screenshot_11-9-2026_11911_localhost" src="https://github.com/user-attachments/assets/208716e8-59e6-483d-878b-1c5293ce4bb4" />
 
 
 ## 🚀 Future Improvements
