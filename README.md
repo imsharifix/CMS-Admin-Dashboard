@@ -132,12 +132,11 @@ Add your dashboard screenshots here:
 
 Example:
 
-<img width="1763" height="1886" alt="Screenshot_11-9-2026_11911_localhost" src="https://github.com/user-attachments/assets/208716e8-59e6-483d-878b-1c5293ce4bb4" />
+<img width="1910" height="1312" alt="screencapture-localhost-5173-users-2026-09-11-11_25_45" src="https://github.com/user-attachments/assets/d5601727-d6c1-4cd3-b59d-4da93b778681" />
+<img width="1910" height="1702" alt="screencapture-localhost-5173-product-1-2026-09-11-11_26_05" src="https://github.com/user-attachments/assets/84d1be81-c8d3-49e9-bc1c-0cb4f54e93b4" />
 
-<img width="1763" height="815" alt="Screenshot_11-9-2026_11939_localhost" src="https://github.com/user-attachments/assets/6fefcf3f-bee4-40e4-a236-3a7dee027822" />
-<img width="1763" height="1587" alt="Screenshot_11-9-2026_11958_localhost" src="https://github.com/user-attachments/assets/91aa16ca-d144-4d61-bb9c-f1575ec1acc4" />
-
-<img width="1763" height="815" alt="Screenshot_11-9-2026_11926_localhost" src="https://github.com/user-attachments/assets/aee0d366-baba-4a68-8d43-cb2480dc7b48" />
+<img width="1910" height="2025" alt="screencapture-localhost<img width="1910" height="1312" alt="screencapture-localhost-5173-products-2026-09-11-11_26_42" src="https://github.com/user-attachments/assets/cbe1305e-2f48-432e-81cb-58981d561a6c" />
+-5173-2026-09-11-11_25_10" src="https://github.com/user-attachments/assets/e09391cd-ac3f-48bc-9d6b-f41ff983a96b" />
 
 
 
