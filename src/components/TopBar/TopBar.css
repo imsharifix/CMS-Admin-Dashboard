@@ -1,0 +1,256 @@
+/* ================================
+   TOP BAR
+================================ */
+
+.TopBar {
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  border-bottom: 1px solid rgba(15, 23, 42, 0.08);
+
+  box-shadow:
+    0 4px 20px rgba(15, 23, 42, 0.04),
+    0 1px 4px rgba(15, 23, 42, 0.03);
+}
+
+/* ================================
+   WRAPPER
+================================ */
+
+.TopBarWrapper {
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 28px;
+  box-sizing: border-box;
+}
+
+/* ================================
+   LOGO / LEFT
+================================ */
+
+.TopLeft {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  font-size: 23px;
+  font-weight: 800;
+  letter-spacing: -0.7px;
+
+  color: #111827;
+
+  cursor: pointer;
+  user-select: none;
+
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
+}
+
+.TopLeft::first-letter {
+  color: #6366f1;
+}
+
+.TopLeft:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+/* ================================
+   RIGHT SIDE
+================================ */
+
+.TopRight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ================================
+   ICON CONTAINER
+================================ */
+
+.TopBarIconContainer {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+
+  border-radius: 13px;
+
+  color: #64748b;
+  background: transparent;
+
+  cursor: pointer;
+
+  transition:
+    background 0.25s ease,
+    color 0.25s ease,
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.TopBarIconContainer svg {
+  font-size: 22px;
+
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
+}
+
+.TopBarIconContainer:hover {
+  color: #4f46e5;
+  background: #eef2ff;
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.1);
+}
+
+.TopBarIconContainer:hover svg {
+  transform: scale(1.08);
+}
+
+/* ================================
+   BADGE
+================================ */
+
+.TopBarIconBadge {
+  position: absolute;
+
+  top: 3px;
+  right: 2px;
+
+  min-width: 17px;
+  height: 17px;
+
+  padding: 0 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border-radius: 999px;
+
+  background: linear-gradient(135deg, #6366f1, #8b5cf6);
+
+  color: white;
+
+  font-size: 9px;
+  font-weight: 800;
+  line-height: 1;
+
+  border: 2px solid white;
+
+  box-shadow: 0 3px 8px rgba(99, 102, 241, 0.35);
+
+  pointer-events: none;
+}
+
+/* ================================
+   PROFILE PHOTO
+================================ */
+
+.TopBarProfilePhoto {
+  width: 42px;
+  height: 42px;
+
+  margin-left: 8px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  border: 2px solid white;
+
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.12);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.TopBarProfilePhoto:hover {
+  transform: scale(1.07);
+
+  border-color: #818cf8;
+
+  box-shadow: 0 8px 22px rgba(99, 102, 241, 0.25);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+  .TopBar {
+    height: 64px;
+  }
+
+  .TopBarWrapper {
+    padding: 0 16px;
+  }
+
+  .TopLeft {
+    font-size: 20px;
+  }
+
+  .TopRight {
+    gap: 3px;
+  }
+
+  .TopBarIconContainer {
+    width: 38px;
+    height: 38px;
+    border-radius: 11px;
+  }
+
+  .TopBarIconContainer svg {
+    font-size: 20px;
+  }
+
+  .TopBarProfilePhoto {
+    width: 38px;
+    height: 38px;
+    margin-left: 5px;
+  }
+}
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 480px) {
+  .TopLeft {
+    font-size: 18px;
+  }
+
+  .TopBarIconContainer:nth-child(2) {
+    display: none;
+  }
+
+  .TopBarWrapper {
+    padding: 0 12px;
+  }
+}

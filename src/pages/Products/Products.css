@@ -1,0 +1,307 @@
+/* ================================
+   Main Container
+================================ */
+.Link {
+    text-decoration: none;
+}
+
+.user-list-container {
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   Card
+================================ */
+
+.user-list-card {
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.user-list-header {
+    min-height: 90px;
+    padding: 20px 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.user-list-header h2 {
+    margin: 0;
+
+    font-size: 22px;
+    font-weight: 700;
+    color: #171717;
+}
+
+.user-list-header p {
+    margin: 6px 0 0;
+
+    font-size: 14px;
+    color: #8a8a8a;
+}
+
+
+/* ================================
+   Add User Button
+================================ */
+
+.add-user-button {
+    border: none;
+    outline: none;
+
+    padding: 11px 18px;
+
+    border-radius: 10px;
+
+    background: #111827;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.add-user-button:hover {
+    background: #000000;
+    transform: translateY(-1px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+/* ================================
+   Table
+================================ */
+
+.user-table-wrapper {
+    width: 100%;
+}
+
+.user-data-grid {
+    border: none !important;
+    font-family: inherit !important;
+}
+
+
+/* ================================
+   Table Header
+================================ */
+
+.user-data-grid .user-table-header {
+    background: #fafafa;
+    color: #6b7280;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
+/* ================================
+   Rows
+================================ */
+
+.user-data-grid .MuiDataGrid-row {
+    transition: background 0.2s ease;
+}
+
+.user-data-grid .MuiDataGrid-row:hover {
+    background: #f8fafc;
+}
+
+
+/* ================================
+   User Cell
+================================ */
+
+.user-cell {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 38px;
+    height: 38px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 2px solid #ffffff;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+.user-name {
+    font-size: 14px;
+    font-weight: 600;
+    color: #202124;
+}
+
+
+/* ================================
+   Status
+================================ */
+
+.status-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 72px;
+
+    padding: 6px 10px;
+
+    border-radius: 999px;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-active {
+    background: #ecfdf3;
+    color: #15803d;
+}
+
+.status-inactive {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+
+/* ================================
+   Transaction
+================================ */
+
+.transaction {
+    font-size: 14px;
+    font-weight: 700;
+    color: #111827;
+}
+
+
+/* ================================
+   Action Buttons
+================================ */
+
+.action-buttons {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.action-buttons button {
+    width: 34px;
+    height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 9px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+}
+
+.action-buttons button:hover {
+    transform: translateY(-1px);
+}
+
+
+/* Edit */
+
+.edit-button {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.edit-button:hover {
+    background: #dbeafe;
+}
+
+
+/* Delete */
+
+.delete-button {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+.delete-button:hover {
+    background: #fee2e2;
+}
+
+
+/* ================================
+   MUI Pagination
+================================ */
+
+.user-data-grid .MuiTablePagination-root {
+    color: #6b7280;
+}
+
+.user-data-grid .MuiDataGrid-footerContainer {
+    border-top: 1px solid #eeeeee;
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 768px) {
+    .user-list-container {
+        padding: 15px;
+    }
+
+    .user-list-header {
+        padding: 18px;
+    }
+
+    .user-list-header h2 {
+        font-size: 19px;
+    }
+
+    .user-list-header p {
+        display: none;
+    }
+
+    .add-user-button {
+        padding: 9px 13px;
+        font-size: 13px;
+    }
+}

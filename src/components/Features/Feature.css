@@ -1,0 +1,251 @@
+.features {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    padding: 28px 0;
+    box-sizing: border-box;
+}
+
+/* =========================
+   Feature Card
+========================= */
+
+.featureItem {
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+
+    min-height: 50px;
+    padding: 26px 28px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background: linear-gradient(145deg,
+            #ffffff 0%,
+            #f8fafc 100%);
+
+    border: 1px solid #e9eef5;
+    border-radius: 18px;
+
+    box-shadow:
+        0 4px 12px rgba(15, 23, 42, 0.04),
+        0 12px 30px rgba(15, 23, 42, 0.06);
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+
+    box-sizing: border-box;
+}
+
+/* Decorative glow */
+
+.featureItem::before {
+    content: "";
+    position: absolute;
+
+    width: 120px;
+    height: 120px;
+
+    top: -55px;
+    right: -45px;
+
+    background: rgba(37, 99, 235, 0.08);
+    border-radius: 50%;
+
+    transition: transform 0.4s ease;
+}
+
+.featureItem:hover {
+    transform: translateY(-5px);
+
+    border-color: #dbe5f1;
+
+    box-shadow:
+        0 8px 18px rgba(15, 23, 42, 0.06),
+        0 20px 45px rgba(15, 23, 42, 0.1);
+}
+
+.featureItem:hover::before {
+    transform: scale(1.5);
+}
+
+/* =========================
+   Title
+========================= */
+
+.featureTitle {
+    position: relative;
+    z-index: 1;
+
+    margin-bottom: 10px;
+
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+}
+
+/* =========================
+   Money + Rate
+========================= */
+
+.featureContainer {
+    position: relative;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 16px;
+}
+
+.featureMoney {
+    color: #0f172a;
+
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: -1px;
+}
+
+.featureRate {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: #16a34a;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.featureRate.negative {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    color: red;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+/* =========================
+   Icons
+========================= */
+
+.featureIcon {
+    width: 18px !important;
+    height: 18px !important;
+
+    padding: 4px;
+
+    color: #16a34a;
+
+    background: rgba(22, 163, 74, 0.1);
+
+    border-radius: 50%;
+
+    transition: transform 0.25s ease;
+}
+
+.featureItem:hover .featureIcon {
+    transform: translateY(-2px);
+}
+
+.featureIcon.negative {
+    color: #ef4444;
+    background: rgba(239, 68, 68, 0.1);
+}
+
+/* =========================
+   Subtitle
+========================= */
+
+.featureSub {
+    position: relative;
+    z-index: 1;
+
+    margin-top: 14px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* =========================
+   Responsive
+========================= */
+
+@media screen and (max-width: 900px) {
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 18px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .features {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 20px 0;
+    }
+
+    .featureItem {
+        min-height: 145px;
+        padding: 22px;
+    }
+
+    .featureMoney {
+        font-size: 27px;
+    }
+}
+
+/* =========================
+   Dark Mode Ready
+========================= */
+
+@media (prefers-color-scheme: dark) {
+    .featureItem {
+        background: linear-gradient(145deg,
+                #111827 0%,
+                #0f172a 100%);
+
+        border-color: #1e293b;
+
+        box-shadow:
+            0 8px 20px rgba(0, 0, 0, 0.2),
+            0 20px 45px rgba(0, 0, 0, 0.15);
+    }
+
+    .featureTitle {
+        color: #94a3b8;
+    }
+
+    .featureMoney {
+        color: #f8fafc;
+    }
+
+    .featureSub {
+        color: #64748b;
+    }
+
+    .featureItem::before {
+        background: rgba(59, 130, 246, 0.08);
+    }
+}

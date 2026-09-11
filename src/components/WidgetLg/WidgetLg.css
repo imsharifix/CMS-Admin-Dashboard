@@ -1,0 +1,621 @@
+/* =========================================
+   WIDGET LG — PREMIUM DASHBOARD STYLE
+   ========================================= */
+
+.WidgetLg {
+    flex: 2;
+    min-width: 0;
+    padding: 28px;
+    border-radius: 24px;
+
+    background:
+        radial-gradient(circle at top right,
+            rgba(99, 102, 241, 0.08),
+            transparent 35%),
+        #ffffff;
+
+    border: 1px solid rgba(15, 23, 42, 0.07);
+
+    box-shadow:
+        0 10px 30px rgba(15, 23, 42, 0.04),
+        0 2px 8px rgba(15, 23, 42, 0.03);
+
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.WidgetLg:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 20px 45px rgba(15, 23, 42, 0.08),
+        0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+
+/* =========================================
+   HEADER
+   ========================================= */
+
+.WidgetLgHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+}
+
+.WidgetLgEyebrow {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #6366f1;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+
+.WidgetLgTitle {
+    margin: 0;
+
+    color: #0f172a;
+
+    font-size: 21px;
+    font-weight: 750;
+
+    letter-spacing: -0.03em;
+}
+
+
+/* =========================================
+   TABLE WRAPPER
+   ========================================= */
+
+.WidgetLgTableWrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    scrollbar-width: thin;
+    scrollbar-color: #cbd5e1 transparent;
+}
+
+.WidgetLgTableWrapper::-webkit-scrollbar {
+    height: 6px;
+}
+
+.WidgetLgTableWrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.WidgetLgTableWrapper::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 20px;
+}
+
+
+/* =========================================
+   TABLE
+   ========================================= */
+
+.WidgetLgTable {
+    width: 100%;
+
+    min-width: 650px;
+
+    border-collapse: separate;
+    border-spacing: 0;
+
+    font-size: 14px;
+}
+
+
+/* =========================================
+   TABLE HEADER
+   ========================================= */
+
+.WidgetLgTh {
+    padding: 0 16px 14px;
+
+    color: #94a3b8;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.08em;
+    text-align: left;
+    text-transform: uppercase;
+
+    border-bottom: 1px solid #eef2f7;
+}
+
+.WidgetLgTh:first-child {
+    padding-left: 8px;
+}
+
+
+/* =========================================
+   TABLE ROW
+   ========================================= */
+
+.WidgetLgTr {
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.WidgetLgTable tbody .WidgetLgTr {
+    position: relative;
+}
+
+.WidgetLgTable tbody .WidgetLgTr:hover {
+    background: linear-gradient(90deg,
+            rgba(99, 102, 241, 0.045),
+            rgba(99, 102, 241, 0.015));
+}
+
+
+/* =========================================
+   TABLE CELLS
+   ========================================= */
+
+.WidgetLgTable tbody td {
+    padding: 18px 16px;
+
+    border-bottom: 1px solid #f1f5f9;
+
+    vertical-align: middle;
+}
+
+.WidgetLgTable tbody tr:last-child td {
+    border-bottom: none;
+}
+
+
+/* =========================================
+   CUSTOMER
+   ========================================= */
+
+.WidgetLgUser {
+    display: flex;
+    align-items: center;
+
+    gap: 13px;
+
+    padding-left: 8px !important;
+}
+
+.WidgetLgImg {
+    width: 44px;
+    height: 44px;
+
+    flex-shrink: 0;
+
+    object-fit: cover;
+
+    border-radius: 14px;
+
+    border: 2px solid #ffffff;
+
+    box-shadow:
+        0 4px 12px rgba(15, 23, 42, 0.12);
+
+    background: #f1f5f9;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.WidgetLgTable tbody tr:hover .WidgetLgImg {
+    transform: scale(1.06);
+
+    box-shadow:
+        0 7px 18px rgba(99, 102, 241, 0.2);
+}
+
+
+/* =========================================
+   CUSTOMER INFORMATION
+   ========================================= */
+
+.WidgetLgCustomer {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 0;
+
+    gap: 4px;
+}
+
+.WidgetLgName {
+    color: #0f172a;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    white-space: nowrap;
+}
+
+.WidgetLgEmail {
+    max-width: 190px;
+
+    overflow: hidden;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+    font-weight: 500;
+
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   DATE
+   ========================================= */
+
+.WidgetLgDate {
+    color: #64748b;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   AMOUNT
+   ========================================= */
+
+.WidgetLgAmount {
+    color: #0f172a;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   STATUS
+   ========================================= */
+
+.WidgetLgStatus {
+    text-align: left;
+}
+
+
+/* =========================================
+   STATUS BUTTON
+   ========================================= */
+
+.WidgetLgButton {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 88px;
+
+    padding: 7px 13px;
+
+    border: none;
+    border-radius: 999px;
+
+    font-family: inherit;
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 0.04em;
+
+    text-transform: capitalize;
+
+    cursor: default;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.WidgetLgButton:hover {
+    transform: translateY(-1px);
+}
+
+
+/* =========================================
+   APPROVED
+   ========================================= */
+
+.WidgetLgButton.approved {
+    color: #047857;
+
+    background: #ecfdf5;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(16, 185, 129, 0.12);
+}
+
+.WidgetLgButton.approved::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #10b981;
+
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.12);
+}
+
+
+/* =========================================
+   PENDING
+   ========================================= */
+
+.WidgetLgButton.pending {
+    color: #b45309;
+
+    background: #fffbeb;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(245, 158, 11, 0.12);
+}
+
+.WidgetLgButton.pending::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #f59e0b;
+
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.12);
+}
+
+
+/* =========================================
+   DECLINED
+   ========================================= */
+
+.WidgetLgButton.declined {
+    color: #b91c1c;
+
+    background: #fef2f2;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(239, 68, 68, 0.12);
+}
+
+.WidgetLgButton.declined::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #ef4444;
+
+    box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.12);
+}
+
+
+/* =========================================
+   COMPLETED
+   ========================================= */
+
+.WidgetLgButton.completed {
+    color: #1d4ed8;
+
+    background: #eff6ff;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(59, 130, 246, 0.12);
+}
+
+.WidgetLgButton.completed::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #3b82f6;
+
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.12);
+}
+
+
+/* =========================================
+   CANCELLED
+   ========================================= */
+
+.WidgetLgButton.cancelled {
+    color: #475569;
+
+    background: #f1f5f9;
+
+    box-shadow:
+        inset 0 0 0 1px rgba(100, 116, 139, 0.12);
+}
+
+.WidgetLgButton.cancelled::before {
+    content: "";
+
+    width: 6px;
+    height: 6px;
+
+    margin-right: 7px;
+
+    border-radius: 50%;
+
+    background: #64748b;
+}
+
+
+/* =========================================
+   RESPONSIVE — TABLET
+   ========================================= */
+
+@media (max-width: 900px) {
+    .WidgetLg {
+        padding: 22px;
+        border-radius: 20px;
+    }
+
+    .WidgetLgTitle {
+        font-size: 19px;
+    }
+
+    .WidgetLgTable tbody td {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .WidgetLgImg {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE — MOBILE
+   ========================================= */
+
+@media (max-width: 600px) {
+    .WidgetLg {
+        padding: 18px;
+
+        border-radius: 18px;
+    }
+
+    .WidgetLgHeader {
+        margin-bottom: 18px;
+    }
+
+    .WidgetLgEyebrow {
+        font-size: 10px;
+    }
+
+    .WidgetLgTitle {
+        font-size: 18px;
+    }
+
+    .WidgetLgTable {
+        min-width: 600px;
+    }
+
+    .WidgetLgTable tbody td {
+        padding: 14px 12px;
+    }
+
+    .WidgetLgUser {
+        padding-left: 4px !important;
+    }
+
+    .WidgetLgImg {
+        width: 38px;
+        height: 38px;
+
+        border-radius: 11px;
+    }
+
+    .WidgetLgName {
+        font-size: 13px;
+    }
+
+    .WidgetLgEmail {
+        font-size: 11px;
+    }
+
+    .WidgetLgDate,
+    .WidgetLgAmount {
+        font-size: 12px;
+    }
+
+    .WidgetLgButton {
+        min-width: 80px;
+
+        padding: 6px 10px;
+
+        font-size: 10px;
+    }
+}
+
+
+/* =========================================
+   DARK MODE
+   Add class="dark" to a parent element
+   ========================================= */
+
+.dark .WidgetLg {
+    background:
+        radial-gradient(circle at top right,
+            rgba(99, 102, 241, 0.12),
+            transparent 35%),
+        #111827;
+
+    border-color: rgba(255, 255, 255, 0.06);
+
+    box-shadow:
+        0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.dark .WidgetLgTitle {
+    color: #f8fafc;
+}
+
+.dark .WidgetLgTh {
+    color: #64748b;
+
+    border-bottom-color: #1f2937;
+}
+
+.dark .WidgetLgTable tbody td {
+    border-bottom-color: #1f2937;
+}
+
+.dark .WidgetLgTable tbody .WidgetLgTr:hover {
+    background: rgba(99, 102, 241, 0.08);
+}
+
+.dark .WidgetLgName {
+    color: #f1f5f9;
+}
+
+.dark .WidgetLgEmail {
+    color: #64748b;
+}
+
+.dark .WidgetLgDate {
+    color: #94a3b8;
+}
+
+.dark .WidgetLgAmount {
+    color: #f8fafc;
+}

@@ -1,0 +1,192 @@
+.sales-chart {
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 24px;
+
+    border: 1px solid #ede9fe;
+    border-radius: 28px;
+
+    background: linear-gradient(145deg,
+            #ffffff 0%,
+            #f8f7ff 100%);
+
+    box-shadow:
+        0 25px 70px rgba(76, 29, 149, 0.1);
+
+    font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+
+    box-sizing: border-box;
+}
+
+
+/* ================================
+   Header
+================================ */
+
+.sales-chart__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.sales-chart__label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #8b5cf6;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+
+.sales-chart__title {
+    margin: 0;
+
+    color: #111827;
+
+    font-size: 26px;
+    font-weight: 700;
+
+    letter-spacing: -0.8px;
+}
+
+
+.sales-chart__description {
+    margin: 6px 0 0;
+
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+
+.sales-chart__year {
+    padding: 8px 13px;
+
+    border-radius: 12px;
+
+    background: #ede9fe;
+    color: #7c3aed;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* ================================
+   Chart
+================================ */
+
+.sales-chart__wrapper {
+    width: 100%;
+    height: 420px;
+}
+
+
+/* ================================
+   Footer
+================================ */
+
+.sales-chart__footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-top: 10px;
+    padding-top: 18px;
+
+    border-top: 1px solid #eee;
+}
+
+
+.sales-chart__footer-label {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #94a3b8;
+
+    font-size: 12px;
+}
+
+
+.sales-chart__footer-value {
+    color: #111827;
+
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.sales-chart__status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    color: #16a34a;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.sales-chart__status-dot {
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+
+    background: #22c55e;
+
+    box-shadow:
+        0 0 0 4px rgba(34, 197, 94, 0.12);
+}
+
+
+/* ================================
+   Responsive
+================================ */
+
+@media (max-width: 640px) {
+    .sales-chart {
+        margin: 20px auto;
+        padding: 18px;
+
+        border-radius: 22px;
+    }
+
+    .sales-chart__title {
+        font-size: 22px;
+    }
+
+    .sales-chart__description {
+        font-size: 13px;
+    }
+
+    .sales-chart__wrapper {
+        height: 300px;
+    }
+
+    .sales-chart__footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
