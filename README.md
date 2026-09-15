@@ -132,13 +132,13 @@ Add your dashboard screenshots here:
 
 Example:
 
-<img width="1910" height="1312" alt="screencapture-localhost-5173-users-2026-09-11-11_25_45" src="https://github.com/user-attachments/assets/d5601727-d6c1-4cd3-b59d-4da93b778681" />
-<img width="1910" height="1702" alt="screencapture-localhost-5173-product-1-2026-09-11-11_26_05" src="https://github.com/user-attachments/assets/84d1be81-c8d3-49e9-bc1c-0cb4f54e93b4" />
+<img width="1910" height="1312" alt="Users Page" src="https://github.com/user-attachments/assets/d5601727-d6c1-4cd3-b59d-4da93b778681" />
 
-<img width="1910" height="2025" alt="screencapture-localhost<img width="1910" height="1312" alt="screencapture-localhost-5173-products-2026-09-11-11_26_42" src="https://github.com/user-attachments/assets/cbe1305e-2f48-432e-81cb-58981d561a6c" />
--5173-2026-09-11-11_25_10" src="https://github.com/user-attachments/assets/e09391cd-ac3f-48bc-9d6b-f41ff983a96b" />
+<img width="1910" height="1702" alt="Product Details" src="https://github.com/user-attachments/assets/84d1be81-c8d3-49e9-bc1c-0cb4f54e93b4" />
 
+<img width="1910" height="2025" alt="Dashboard" src="https://github.com/user-attachments/assets/e09391cd-ac3f-48bc-9d6b-f41ff983a96b" />
 
+<img width="1910" height="1312" alt="Products Page" src="https://github.com/user-attachments/assets/cbe1305e-2f48-432e-81cb-58981d561a6c" />
 
 
 ## 🚀 Future Improvements
